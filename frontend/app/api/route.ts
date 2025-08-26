@@ -18,8 +18,8 @@ type Choice = {
 type ScenarioMap = Record<string, Scenario>;
 const scenarios: ScenarioMap = scenariosRaw as ScenarioMap;
 
-type Stats = { gpa: number; social: number; sanity: number };
-const initialStats: Stats = { gpa: 4.0, social: 100, sanity: 100 };
+type Stats = { gpa: number; burnout: number; sanity: number };
+const initialStats: Stats = { gpa: 4.0, burnout: 100, sanity: 100 };
 let currentStats: Stats = initialStats;
 
 export async function POST(req: NextRequest) {

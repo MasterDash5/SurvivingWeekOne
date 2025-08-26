@@ -17,7 +17,7 @@ type Choice = {
   next: string;
 };
 
-type Stats = { gpa: number; social: number; sanity: number };
+type Stats = { gpa: number; burnout: number; sanity: number };
 
 const startState = "day1-commons";
 
@@ -83,7 +83,7 @@ export default function Game() {
               {stats && (
                 <div className="mt-4 text-sm">
                   <p>GPA: {stats.gpa}</p>
-                  <p>Social: {stats.social}</p>
+                  <p>Burnout: {stats.burnout}</p>
                   <p>Sanity: {stats.sanity}</p>
                 </div>
               )}
