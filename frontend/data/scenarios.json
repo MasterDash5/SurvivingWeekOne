@@ -1,0 +1,633 @@
+{
+    "day1-commons": {
+        "description": "The first day you come into the school and there is a gathering in the Commons for the incoming freshmen. Where will you sit?",
+        "choices": [
+            {
+                "id": "sit-center",
+                "text": "Sit in the center with the rest of the group",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-center"
+            },
+            {
+                "id": "sit-couch",
+                "text": "Sit on the couches with some other students",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-couch-intro"
+            },
+            {
+                "id": "sit-outskirts",
+                "text": "Sit on the outskirts where nobody else is sitting",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-outskirts-intro"
+            }
+        ]
+    },
+    "day1-commons-center": {
+        "description": "After sitting with all of the students, one of the students named Michael starts talking to you. He seems really cool and has some of the same hobbies as you. A girl named Rachel sitting by you guys chimes in when she hears you mention your small hometown which she also happens to be from. How do you respond to this?",
+        "choices": [
+            {
+                "id": "ignore-rachel",
+                "text": "Ignore Rachel and continue talking with Michael",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-center-response1"
+            },
+            {
+                "id": "joke-rachel",
+                "text": "Crack a joke to include Rachel",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-center-response2"
+            },
+            {
+                "id": "recognize-rachel",
+                "text": "Tell Rachel you thought she looked familiar",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-center-response3"
+            }
+        ]
+    },
+    "day1-commons-center-response1": {
+        "description": "Michael feeling the awkward tension with Rachel being ignored says how we live in a small world for both of you guys to be from the same place. This leads to Rachel joining your guy's conversation.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-a"
+            }
+        ]
+    },
+    "day1-commons-center-response2": {
+        "description": "The joke being a dumb inside joke from your local high school,thankfully Rachel finds the joke funny. Michael asks to be let into the joke as he doesn’t understand and you and Rachel both explain it to him.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-a"
+            }
+        ]
+    },
+    "day1-commons-center-response3": {
+        "description": "and Rachel comments the same to you and how it isn't too surprising as there was one high school that housed all the students in your hometown.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-a"
+            }
+        ]
+    },
+    "day1-commons-couch-intro": {
+        "description": "While heading to the couches you find a decently comfortable looking spot next to 2 other students who are just scrolling on their phones. You take a seat and wait awkwardly while the event gets started. Once the event gets rolling they put their phones away, you take this opportunity to introduce yourself. You get to know them pretty well, there is Sarah who definitely has more of a punk vibe to her, she talks a lot about her interest in the band The Clash and old Green Day. Then there is Jerome who is already a part of the Super Smash Bros. Ultimate Esports team. Apart from that he seems to be more of a quiet fellow. You continue chatting for the entire event and it’s finally time for your first class.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-couch"
+            }
+        ]
+    },
+    "day1-commons-couch": {
+        "description": "You walk into the room for your intro to CS class, you don’t see anyone you know, where will you sit?",
+        "choices": [
+            {
+                "id": "front-row",
+                "text": "You decide to sit in the front row closest to the professor.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-couch-response"
+            },
+            {
+                "id": "back-row",
+                "text": "You decide to take a seat in the empty back row.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-couch-response"
+            },
+            {
+                "id": "center-row",
+                "text": " You decide to take a seat in the center where most of the other students are.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-couch-response"
+            }
+        ]
+    },
+    "day1-commons-couch-response": {
+        "description": "You take your seat and listen to the professor, the class goes by quickly and at the end the class gets assigned some homework, to get to know the other freshmen. The assignment is pretty simple, you have to ask 10 new students some general questions then have them sign off on your page. You have your OOP class next which goes smoothly with both Sarah and Jerome in the class, it was really just a syllabus day.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-b"
+            }
+        ]
+    },
+    "day1-commons-outskirts-intro": {
+        "description": "You head to the tall chairs by the ping pong table which also happens to be the most deserted part of the commons. You take a seat and pull out your phone, you put in your earbuds and start up your favorite songs. Although you are keeping to yourself the event gets started and you start looking around, you notice a few groups that stand out. You first see what could be an awkward couple with a girl with punk-rock headphones sitting on the couches by a quiet guy who looks glued to his phone. You notice another pair of students laughing loudly in the center of the commons. They seem way more sociable then you and seem to be having a blast. Eventually the gathering ends and it's time for your first class.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-outskirts"
+            }
+        ]
+    },
+    "day1-commons-outskirts": {
+        "description": "You walk into the Intro to CS classroom, not seeing anyone you know. Where will you sit?",
+        "choices": [
+            {
+                "id": "window",
+                "text": "You decide to sit by the window furthest from the professor.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-outskirts-response"
+            },
+            {
+                "id": "front-row",
+                "text": "You decide to sit in the front row closest to the professor.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-outskirts-response"
+            },
+            {
+                "id": "back-row",
+                "text": "You decide to take a seat in the empty back row",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-commons-outskirts-response"
+            }
+        ]
+    },
+    "day1-commons-outskirts-response": {
+        "description": "You take your seat and listen to the professor, the class goes by quickly. At the end, the professor assigns some pretty simple homework, to get to know the other freshmen. The assignment is pretty simple, you have to ask 10 new students some general questions then have them sign off on your page.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-c"
+            }
+        ]
+    },
+    "day1-lunch-a": {
+        "description": "After wrapping up the event everyone heads to class, somehow you are the first person in to class and you get a seat up in the front of the class, thankfully some familiar faces walk in when Rachel then Michael come into the class both sitting next to you. After chatting a little bit, you guys find out that I have the same schedule. Class goes by smoothly and at the end you're giving a home assignment to get to know some of the other freshmen. You have to ask some general questions to ten different students and have them sign off on your paper. During lunch you, Michael and Rachel decide to try and finish up the home assignment, but who will you ask for the assignment.",
+        "choices": [
+            {
+                "id": "ask-michael-and-rachel",
+                "text": "Ask Michael and Rachel then just hang along with them and ask the same people they do.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-a-response1"
+            },
+            {
+                "id": "ask-different-people",
+                "text": "Say that you guys should ask different people instead of just having the same assignment that you all turn in.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-a-response2"
+            },
+            {
+                "id": "wait-for-others",
+                "text": "Ask Michael and Rachel and wait until people ask you then you ask them back.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-a-response3"
+            }      
+        ]
+    },
+    "day1-lunch-a-response1": {
+        "description": "They say that’s a great idea, so you guys go around asking people you see in the commons and halls. Ultimately you finish up pretty quickie and sit down to have lunch with Michael and Rachel. While finishing the homework you guys meet a super interesting guy named Josh who is basically a prodigy and is super smart with computers. He joins you in lunch and you guys chat about school and life overall.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-a"
+            }
+        ]
+    },
+    "day1-lunch-a-response2": {
+        "description": "They agree and you each go on your own to finish this project, the final person you ask is Josh a prodigy programmer who loves working with computers, you guys kick it off and chat for the remainder of lunch.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-a"
+            }
+        ]
+    },
+    "day1-lunch-a-response3": {
+        "description": "After asking Michael and Rachel you sit down and wait, during this time 3 people ask you and you only get to ask one of them to help with your own. Towards the end of lunch Rachel and Michael meet up with you and introduce you to a programming prodigy named Josh they meet while doing the homework. This ultimately leads to you turning in the assignment late.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-a"
+            }
+        ]
+    },
+    "day1-lunch-b": {
+        "description": "Lunch comes around and Jerome and Sarah invite you to go eat at the mall with them.",
+        "choices": [
+            {
+                "id": "mall",
+                "text": "You accept their invite and head to the mall.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-b-response1"
+            },
+            {
+                "id": "next-time",
+                "text": "You say that you have an assignment to do but next time for sure.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-b-response2"
+            },
+            {
+                "id": "wait-for-me",
+                "text": "You ask them to wait until you complete your assignment real quick first.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-b-response3"
+            }      
+        ]
+    },
+    "day1-lunch-b-response1": {
+        "description": "On the way to the mall you guys chat about your lives back home. You get to the food court and decide to eat at Chick-Fil-A because Jerome has never tried it before. You decide to sit at the food court and chat away the remainder of lunch.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-b"
+            }
+        ]
+    },
+    "day1-lunch-b-response2": {
+        "description": "They both seem bummed but say it’s all good and that next time you won’t get away so easily. You walk around the commons and ask everyone you see also doing the assignment. This doesn’t take all that long so you sit in the commons looking over emails about your other classes and do some research into potential future classes for the rest of lunch.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-b"
+            }
+        ]
+    },
+    "day1-lunch-b-response3": {
+        "description": "They say that’s not a problem and ask what the homework is and if they can help at all. They are the first two people you ask and they help you ask a few more. After about 20 minutes of looking for other freshmen you guys head to the mall. You chat about future plans and goals. You guys grab some McDonalds and head back to the school. You guys end up chilling on the couches until lunch is over.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-b"
+            }
+        ]
+    },
+    "day1-lunch-c": {
+        "description": "Lunch comes around, and you quickly pack up, eager to avoid the crowds. What will you do for lunch?",
+        "choices": [
+            {
+                "id": "do-assignment",
+                "text": "Immediately start looking for students doing the assignment in quiet areas.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-c-response1"
+            },
+            {
+                "id": "study",
+                "text": "Head directly to a study room to research potential answers for the assignment's \"general questions\" to be prepared.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-c-response2"
+            },
+            {
+                "id": "go-home",
+                "text": "Go back to your dorm to grab a snack and mentally prepare for the daunting task of talking to strangers later.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day1-lunch-c-response3"
+            }      
+        ]
+    },
+    "day1-lunch-c-response1": {
+        "description": "You scan the Commons, spotting a few other lone figures with papers in hand. You approach them and exchange questions and signatures. This doesn't take long, and you manage to finish your assignment before the lunch rush truly hits, giving you time to review some notes on your laptop.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-c"
+            }
+        ]
+    },
+    "day1-lunch-c-response2": {
+        "description": "You make your way to a study room finding a quiet one. You spend a good portion of lunch researching common \"get to know you\" questions and, more importantly, looking up interesting facts about your major to use as conversation starters. This preparation makes you feel ready, but you're still without any signatures.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-c"
+            }
+        ]
+    },
+    "day1-lunch-c-response3": {
+        "description": "You retreat to your dorm, grabbing a quick snack and mentally psyching yourself up for the assignment. The thought of approaching ten strangers is draining. You spend the rest of lunch playing a quick game on your laptop, hoping to clear your head before tackling the homework after classes.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-morning-c"
+            }
+        ]
+    },
+    "day2-morning-a": {
+        "description": "You wake up with the sun shining through your room's curtains. Today is the first day of actual foundational classes referring to computer science or just computers in general. You notice your roommate Jerome is already out of the room and you meet him in the kitchen eating breakfast fast. You join them after making a quick bowl of cereal. After eating you both head to class.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-a"
+            }
+        ]
+    },
+        "day2-morning-b": {
+        "description": "You wake up to the sound of your roommate up and about. You get out of your PJs and get changed and walk out to the kitchen area. To your surprise you see Jerome there apparently he was your roommate and you didn’t notice until just now. You guys sit down and eat together and head out to school together. You get to school and head to your first class for the day which is OOP. Today the main focus is on a week long project, the professor recommends that you get into groups of 3-4. At the end of class you Sarah and Jerome decide to work on the project together.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-b"
+            }
+        ]
+    },
+    "day2-morning-c": {
+        "description": "You wake up to some buzzing in the kitchen, you head in and see your roommate Jerome making some food. You quickly make yourself some cereal and quietly eat it on the kitchen counter. After this you wash your bowl and spoon then head to school.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c"
+            }
+        ]
+    },
+    "day2-class-a": {
+        "description": "Your first class is an OOP class where you find Michael, Rachel, and Josh, you go over and sit with them. The professor begins the lecture and it goes by smoothly. After the lecture, the professor announces your first major assignment: a team-based project that will be due on Friday. He says that the project will be the main thing you'll be working on for the rest of the week, and he encourages you to find a team of four by the end of the day. You guys decide to join a group together. But what will you guys work on?",
+        "choices": [
+            {
+                "id": "calculator",
+                "text": "You decide to make a calculator.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-a-response1"
+            },
+            {
+                "id": "game",
+                "text": "You decide to make a simple game.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-a-response2"
+            },
+            {
+                "id": "chatbot",
+                "text": "You decide to make an AI chatbot.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-a-response3"
+            }      
+        ]
+    },
+    "day2-class-a-response1": {
+        "description": "This should be pretty easy Josh says, we should probably focus a lot on design to make it stand out, he adds. You all agree and decide to make a stylish calculator.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-gathering-decision-a"
+            }
+        ]
+    },
+    "day2-class-a-response2": {
+        "description": "Michel really likes this idea and comments that a text base rouge like game would be an easy one. This seems like the best option for the group and you decide to do that.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-gathering-decision-a"
+            }
+        ]
+    },
+    "day2-class-a-response3": {
+        "description": "Rachel comments that she’s done web tutorials on chatbots and that she feels they won’t follow OPP super well, so ultimately you decide to make a notes app to jot down notes during class using your own customized notes app.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-gathering-decision-a"
+            }
+        ]
+    },
+    "day2-gathering-decision-a": {
+        "description": "The rest of the day goes by smoothly with nothing super interesting happening. After your final class you guys meet up with Josh. He’s talking with a second year student about a gathering that some students are having at 7:00pm. The second year named Cody invites you guys to the gathering. Everyone says that sounds really fun and would love to go, they look at you waiting to see what you think.",
+        "choices": [
+            {
+                "id": "accept",
+                "text": "Accept the invite",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-party-a"
+            },
+            {
+                "id": "decline",
+                "text": "Decline the invite",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": ""
+            }
+        ]
+    },
+    "day2-party-a": {
+        "description": "After your run in with Cody you all go home and you begin to get ready. You start getting ready for the party around 5pm and head over to the address you were given getting there at 7:30. To your surprise it seems pretty calm and quiet. You knock hoping you got the right address, after anxiously waiting for a response for what seemed like an eternity,  Cody finally opens the door. He welcomes you into the house saying that everyone should be dropping by within the next 20ish minutes. By 8:00 there is a decent gathering of about 40 people with a bunch of activities ranging from board games and video games to an area with arts and crafts like paint and balloon animals, in the kitchen/dining area there are just people chatting. After meeting up with your group and chatting in the dining area,  you guys talk about what you should do next.",
+        "choices": [
+            {
+                "id": "card-games",
+                "text": "You say that some card games would be fun to pass the time.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-party-a-card-games"
+            },
+            {
+                "id": "art",
+                "text": "You say that the arts area looks interesting and head over there.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-party-a-art"
+            }
+        ]
+    },
+    "day2-party-a-card-games": {
+        "description": "You say that some card games would be fun to pass the time. You join a game of poker with Cody and a few other students. You win a few rounds and lose a few, but you learn how to read other people's body language and their tells. By the end of the night, you have a solid understanding of how to read people and what to look for when you're in a conversation with them.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-chatting-a"
+            }
+        ]
+    },
+    "day2-party-a-art": {
+        "description": "You say that the arts area looks interesting and head over there. While painting, you get into a conversation with a graphic design major named Lily. She's impressed by your creative ideas and tells you about a project she's working on that could use a programmer. You exchange contact information and spend the rest of the night talking about potential collaborations. You head home and get some much needed sleep.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day3-morning-a"
+            }
+        ]
+    },
+    "day2-chatting-a": {
+        "description": "You say that you wouldn’t mind chatting some more and that none of the activities seem all that interesting. You and your friends spend the rest of the night talking about school, life, and your futures. You all feel closer as friends, and you now have a solid support group on campus.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": ""
+            }
+        ]
+    },
+    "day2-lunch-b": {
+        "description": "During lunch Jerome brings up a party being hosted at another esports member named Cody. You guys decide to make that plan for the night. He lets you guys know that it is at 7:30pm. The rest of the day goes smoothly and you head home with Jerome and get ready for the party.  You guys meet at the party at the planned time and head inside. There are a bunch of people and activities to partake in. They ask you what sounds good.",
+        "choices": [
+            {
+                "id": "video-games",
+                "text": "You go and play some video games",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-b-response1"
+            },
+            {
+                "id": "card-games",
+                "text": "You go and play some card games.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-b-response2"
+            },
+            {
+                "id": "chat",
+                "text": "You go and chat in the kitchen area.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-b-response3"
+            } 
+        ]
+    },
+    "day2-lunch-b-response1": {
+        "description": "You sit down at the coaches and play a mix of Smash Bros and Mario Party with Jerome Sarah and the other people at the party. As expected Jerome destroys everyone in Smash but it was still a really fun time. Plus Mario Party was a good finish for the games.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c"
+            }
+        ]
+    },
+    "day2-lunch-b-response2": {
+        "description": "While walking over to the area for the card games you see a group of students playing cards against humanity and the three of you guys decide to play. This goes on for a few hours and you all really enjoy yourselves. A student named Rachel ends up winning and claims the title as the funniest.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c"
+            }
+        ]
+    },
+    "day2-lunch-b-response3": {
+        "description": "You and your buddies spend the rest of the night talking about school, life, and your futures. You find out a lot about them and find out they actually know each other from some online games way back.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c"
+            }
+        ]
+    },
+    "day2-class-c": {
+        "description": "You get to your first class of the day which is OOP. The professor announced the first “major” project, this is a simple project that will be used to get your foot in the door and see where everyone is at. He mentions that teams are encouraged but not necessarily recommended. You sit there unsure of what to do.",
+        "choices": [
+            {
+                "id": "ask-professor",
+                "text": " Approach the professor to inquire about working solo or if he knows of any other stragglers.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c-response1"
+            },
+            {
+                "id": "procrastinate",
+                "text": "Try and find a group last minute from the people still lingering.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c-response2"
+            },
+            {
+                "id": "solo",
+                "text": "You decide to take this project on your own.",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-class-c-response3"
+            }      
+        ]
+    },
+    "day2-class-c-response1": {
+        "description": "You wait until most students have left, then approach the professor. He acknowledges that it can definitely be rough and mentions that if there are any that reach out he will get that worked out, but recommends you get started on it solo.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-c"
+            }
+        ]
+    },
+    "day2-class-c-response2": {
+        "description": "You try to catch the eye of a few remaining students, but they either already have groups or politely decline. You even spot Jerome with the girl in headphones from the day one assembly in a small group looking quite focused. Feeling a bit deflated you realize you're definitely on your own for this one.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-c"
+            }
+        ]
+    },
+    "day2-class-c-response3": {
+        "description": "You feel confident in your skill to handle this one alone even if the workload will be heavier. You mentally start outlining project ideas, ready to present your intentions to the professor when the time comes.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day2-lunch-c"
+            }
+        ]
+    },
+    "day2-lunch-c": {
+        "description": "After class it’s lunch time and you're walking around the commons, you overhear a second year student mention a party happening tonight. You notice he’s letting the loud first years from the day one assembly know. While you question going for a bit the idea of all that socializing sounds draining. You spend the rest of lunch working on your project before heading home for the day.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "social": 0 },
+                "next": "day3-morning-c"
+            }
+        ]
+    },
+    "day3-morning-a": {
+        "description": "",
+        "choices": [
+        ]
+    },
+    "day3-morning-b": {
+        "description": "",
+        "choices": [
+        ]
+    },
+    "day3-morning-c": {
+        "description": "",
+        "choices": [
+        ]
+    }
+}
