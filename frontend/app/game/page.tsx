@@ -128,12 +128,12 @@ export default function Game() {
             <p className="text-center m-8">{scenario?.description ?? "Loading..."}</p>
           </div>
 
-          <div className="flex mr-24 ml-24 mb-16 text-white">
+          <div className="flex mr-24 ml-24 mb-16 text-white gap-8">
             {scenario?.choices.map((choice) => (
               <button
                 key={choice.id}
                 onClick={() => handleChoice(choice.id)}
-                className="bg-zinc-700 hover:bg-yellow-500 rounded-md h-32 m-8 mt-2 mb-2 w-1/3"
+                className="bg-zinc-700 hover:bg-yellow-500 rounded-md h-32 m-auto mt-2 mb-2 w-1/3"
               >
 								<p className="text-center m-4">
                 	{choice.text}
