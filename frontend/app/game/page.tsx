@@ -18,15 +18,15 @@ type Choice = {
   next: string;
 };
 
-type Stats = { gpa: number; burnout: number; sanity: number };
+type Stats = { health: number; gpa: number; burnout: number; sanity: number };
 
 const startState = "day1-commons";
 
 export default function Game() {
 	const searchParams = useSearchParams();
 	const playerName = searchParams.get("playerName"); 
-	const [health, setHealth] = useState(20);
   const [stats, setStats] = useState<Stats | null>(null);
+	const [maxStats, setMaxStats] = useState<State | null>(null);
   const [scenario, setScenario] = useState<Scenario | null>(null);
   const [currentScenario, setCurrentScenario] = useState(startState);
 
@@ -41,6 +41,7 @@ export default function Game() {
       const data = await res.json();
       setScenario(data.scenarioData);
       setStats(data.stats);
+			setMaxStats(data.max);
       setCurrentScenario(startState);
     }
     loadScenario();
@@ -60,6 +61,15 @@ export default function Game() {
     setCurrentScenario(data.nextScenario);
   }
 
+	const calculateWidth = (current: number, max: number) => {
+		const num: number = (current / max) * 100;
+
+		if (num > 100)
+			return 100;
+
+		return num;
+	}
+
   return (
     <div>
       <Image
@@ -77,16 +87,25 @@ export default function Game() {
               Surviving Week One
             </h2>
             <div className="mt-8 ml-2">
-              <h4 className="mb-4 text-lg">{playerName}</h4>
-              <div className="flex">
-                <Image src={heart} alt="heart" width={16} className="h-7 w-7" />
-                <p className="ml-2 text-xl">{health}</p>
-              </div>
+              <h4 className="mb-4 text-center text-lg">{playerName}</h4>
               {stats && (
                 <div className="mt-4 text-sm">
-                  <p>GPA: {stats.gpa}</p>
-                  <p>Burnout: {stats.burnout}</p>
-                  <p>Sanity: {stats.sanity}</p>
+									<label className="mb-2">Health</label>
+									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
+										<div className="bg-pink-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.health, maxStats.health)}%`}}></div>
+									</div>
+									<label className="mb-2">GPA</label>
+									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
+										<div className="bg-green-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.gpa, maxStats.gpa)}%`}}></div>
+									</div>
+									<label className="mb-2">Burnout</label>
+									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
+										<div className="bg-red-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.burnout, maxStats.burnout)}%`}}></div>
+									</div>
+									<label className="mb-2">Sanity</label>
+									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
+										<div className="bg-blue-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.sanity, maxStats.sanity)}%`}}></div>
+									</div>
                 </div>
               )}
             </div>
@@ -103,7 +122,7 @@ export default function Game() {
 
         {/* Main game area */}
         <div className="flex flex-col w-full h-screen">
-          <div className="mr-24 ml-24 mt-16 mb-16 bg-zinc-700 opacity-90 text-lg text-white h-screen flex items-center justify-center">
+          <div className="mr-24 ml-24 mt-16 mb-16 bg-zinc-700 opacity-90 text-lg text-white h-1/2 flex items-center justify-center">
             <p className="text-center m-8">{scenario?.description ?? "Loading..."}</p>
           </div>
 

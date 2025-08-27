@@ -19,7 +19,8 @@ type ScenarioMap = Record<string, Scenario>;
 const scenarios: ScenarioMap = scenariosRaw as ScenarioMap;
 
 type Stats = { gpa: number; burnout: number; sanity: number };
-const initialStats: Stats = { gpa: 4.0, burnout: 100, sanity: 100 };
+const initialStats: Stats = { health: 100, gpa: 4.0, burnout: 0, sanity: 100 };
+const maxStats: Stats = { health: 100, gpa: 4.0, burnout: 100, sanity: 100 };
 let currentStats: Stats = initialStats;
 
 export async function POST(req: NextRequest) {
@@ -30,6 +31,7 @@ export async function POST(req: NextRequest) {
   if (!choiceId) {
     return NextResponse.json({
       stats: currentStats,
+			max: maxStats,
       nextScenario: currentScenario,
       scenarioData: scenarios[currentScenario]
     });
