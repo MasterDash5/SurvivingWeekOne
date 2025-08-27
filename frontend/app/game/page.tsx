@@ -72,6 +72,9 @@ export default function Game() {
 		if (num > 100)
 			return 100;
 
+		if (num < 10)
+			return 10;
+
 		return num;
 	}
 
