@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import background from "@/public/background.png";
 import heart from "@/public/heart.png";
@@ -24,6 +24,7 @@ const startState = "day1-commons";
 
 export default function Game() {
 	const searchParams = useSearchParams();
+	const router = useRouter();
 	const playerName = searchParams.get("playerName"); 
   const [stats, setStats] = useState<Stats | null>(null);
 	const [maxStats, setMaxStats] = useState<State | null>(null);
@@ -60,6 +61,10 @@ export default function Game() {
     setStats(data.stats);
     setCurrentScenario(data.nextScenario);
   }
+
+	const clickExitGame = () => {
+		router.push('/');
+	};
 
 	const calculateWidth = (current: number, max: number) => {
 		const num: number = (current / max) * 100;
@@ -111,11 +116,8 @@ export default function Game() {
             </div>
           </div>
           <div className="w-full flex">
-            <button className="bg-zinc-700 hover:bg-yellow-500 rounded-md m-2 w-full">
+            <button onClick={clickExitGame} className="bg-zinc-700 hover:bg-yellow-500 rounded-md m-2 w-full">
               Quit Game
-            </button>
-            <button className="bg-zinc-700 hover:bg-yellow-500 rounded-md m-2 w-full">
-              Settings
             </button>
           </div>
         </div>
