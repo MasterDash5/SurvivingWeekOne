@@ -98,19 +98,27 @@ export default function Game() {
                 <div className="mt-4 text-sm">
 									<label className="mb-2">Health</label>
 									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
-										<div className="bg-pink-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.health, maxStats.health)}%`}}></div>
+										<div className="bg-pink-500 h-5 rounded-full font-bold text-center" style={{width: `${calculateWidth(stats.health, maxStats.health)}%`}}>
+											{ calculateWidth(stats.health, maxStats.health) >= 20 && ( stats.health ) }
+										</div>
 									</div>
 									<label className="mb-2">GPA</label>
 									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
-										<div className="bg-green-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.gpa, maxStats.gpa)}%`}}></div>
+										<div className="bg-green-500 h-5 rounded-full font-bold text-center" style={{width: `${calculateWidth(stats.gpa, maxStats.gpa)}%`}}>
+											{ calculateWidth(stats.gpa, maxStats.gpa) >= 20 && ( stats.gpa.toFixed(2) ) }
+										</div>
 									</div>
 									<label className="mb-2">Burnout</label>
 									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
-										<div className="bg-red-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.burnout, maxStats.burnout)}%`}}></div>
+										<div className="bg-red-500 h-5 rounded-full font-bold text-center" style={{width: `${calculateWidth(stats.burnout, maxStats.burnout)}%`}}>
+											{ calculateWidth(stats.burnout, maxStats.burnout) >= 20 && ( stats.burnout ) }
+										</div>
 									</div>
 									<label className="mb-2">Sanity</label>
 									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
-										<div className="bg-blue-500 h-5 rounded-full text-center" style={{width: `${calculateWidth(stats.sanity, maxStats.sanity)}%`}}></div>
+										<div className="bg-blue-500 h-5 rounded-full font-bold text-center" style={{width: `${calculateWidth(stats.sanity, maxStats.sanity)}%`}}>
+											{ calculateWidth(stats.sanity, maxStats.sanity) >= 20 && ( stats.sanity ) }
+										</div>
 									</div>
                 </div>
               )}
