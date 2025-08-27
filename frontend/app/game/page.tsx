@@ -83,6 +83,7 @@ export default function Game() {
         fill
         className="-z-10 blur-xs object-cover"
         priority
+				style={{ transform: 'translateX(8rem)' }}
       />
       <div className="h-screen w-full flex">
         {/* Sidebar */}
