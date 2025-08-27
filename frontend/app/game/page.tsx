@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import background from "@/public/background.png";
 import heart from "@/public/heart.png";
@@ -22,8 +23,9 @@ type Stats = { gpa: number; burnout: number; sanity: number };
 const startState = "day1-commons";
 
 export default function Game() {
-  const [playerName] = useState("Player Name");
-  const [health, setHealth] = useState(20);
+	const searchParams = useSearchParams();
+	const playerName = searchParams.get("playerName"); 
+	const [health, setHealth] = useState(20);
   const [stats, setStats] = useState<Stats | null>(null);
   const [scenario, setScenario] = useState<Scenario | null>(null);
   const [currentScenario, setCurrentScenario] = useState(startState);
