@@ -101,8 +101,8 @@ export default function Game() {
 
         {/* Main game area */}
         <div className="flex flex-col w-full h-screen">
-          <div className="mr-24 ml-24 mt-16 mb-16 bg-zinc-700 opacity-80 text-lg text-white h-screen flex items-center justify-center">
-            <p className="text-center">{scenario?.description ?? "Loading..."}</p>
+          <div className="mr-24 ml-24 mt-16 mb-16 bg-zinc-700 opacity-90 text-lg text-white h-screen flex items-center justify-center">
+            <p className="text-center m-8">{scenario?.description ?? "Loading..."}</p>
           </div>
 
           <div className="flex mr-24 ml-24 mb-16 text-white">
@@ -110,9 +110,11 @@ export default function Game() {
               <button
                 key={choice.id}
                 onClick={() => handleChoice(choice.id)}
-                className="bg-zinc-700 hover:bg-yellow-500 rounded-md h-12 m-8 mt-2 mb-2 w-1/3"
+                className="bg-zinc-700 hover:bg-yellow-500 rounded-md h-32 m-8 mt-2 mb-2 w-1/3"
               >
-                {choice.text}
+								<p className="text-center m-4">
+                	{choice.text}
+								</p>
               </button>
             ))}
           </div>
