@@ -26,10 +26,10 @@ export default function Game() {
 	const searchParams = useSearchParams();
 	const router = useRouter();
 	const playerName = searchParams.get("playerName"); 
-  const [stats, setStats] = useState<Stats | null>(null);
-	const [maxStats, setMaxStats] = useState<State | null>(null);
-  const [scenario, setScenario] = useState<Scenario | null>(null);
-  const [currentScenario, setCurrentScenario] = useState(startState);
+	const [stats, setStats] = useState<Stats | null>(null);
+	const [maxStats, setMaxStats] = useState<Stats | null>(null);
+    const [scenario, setScenario] = useState<Scenario | null>(null);
+    const [currentScenario, setCurrentScenario] = useState(startState);
 
   // Load initial scenario
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Game() {
       const data = await res.json();
       setScenario(data.scenarioData);
       setStats(data.stats);
-			setMaxStats(data.max);
+	  setMaxStats(data.max);
       setCurrentScenario(startState);
     }
     loadScenario();
@@ -97,7 +97,7 @@ export default function Game() {
             </h2>
             <div className="mt-8 ml-2">
               <h4 className="mb-4 text-center text-lg">{playerName}</h4>
-              {stats && (
+              {stats && maxStats && (
                 <div className="mt-4 text-sm">
 									<label className="mb-2">Health</label>
 									<div className="w-full bg-zinc-700 rounded-full h-5 mb-4">
