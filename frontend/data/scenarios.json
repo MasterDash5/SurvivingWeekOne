@@ -438,7 +438,7 @@
                 "id": "decline",
                 "text": "Decline the invite",
                 "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
-                "next": ""
+                "next": "day2-no-party-a"
             }
         ]
     },
@@ -488,7 +488,75 @@
                 "id": "next",
                 "text": "Next",
                 "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a"
+            }
+        ]
+    },
+    "day2-no-party-a": {
+        "description": "You decide to decline Cody's invite and head straight home. Because the workload for today was super light, you have plenty of free time to kill. You decide to open your laptop, but are stuck between playing video games and working on a personal project. Despite declining the invite, you can't help but feel a little curious about how the party is going. How would you go about spending your evening?",
+        "choices": [
+            {
+                "id": "work",
+                "text": "Work On Your Personal Project",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day2-no-party-a-work"
+            },
+            {
+                "id": "games",
+                "text": "Play Video Games",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day2-no-party-a-game"
+            },
+            {
+                "id": "gym",
+                "text": "Go To The Gym",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day2-no-party-a-gym"
+            }
+        ]
+    },
+    "day2-no-party-a-work": {
+        "description": "You decide to spend the evening working on your personal project. You encounter a few hindrances here and there, but you manage to work around them with the help of documentation and StackOverflow. You feel kind of bad for missing out on the party Cody is hosting, but at least you are improving your programming skills. You manage to complete writing a few classes and functions, but the realization it’s midnight hits you. Do you go to sleep or do you continue working on your personal project?",
+        "choices": [
+            {
+                "id": "sleep",
+                "text": "Go To Sleep",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a"
+            },
+            {
+                "id": "work",
+                "text": "Continue Working On Personal Project",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
                 "next": ""
+            }
+        ]
+    },
+    "day2-no-party-a-game": {
+        "description": "You decide to unwind and spend the evening playing a few rounds of the current video game you’re currently maining. Your overall performance in the rounds was relatively balanced; you didn’t play badly, but you also didn’t play that good either. You managed to win a game, lose the next game, and then get a draw for the third game. You look at the clock and notice that you should probably get some sleep. What do you do?",
+        "choices": [
+            {
+                "id": "sleep",
+                "text": "Go To Sleep",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a"
+            },
+            {
+                "id": "game",
+                "text": "Continue Gaming",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": ""
+            }
+        ]
+    },
+    "day2-no-party-a-gym": {
+        "description": "You decide to get some exercise in and head to the community gym near the dormitory you’re staying at. The gym is more packed than usual, as it was a slow day after all. You perform a well-balanced workout routine, which involves: lifting weights, running on the treadmill, and finishing with a good chunk of laps in the gym’s swimming pool. You finish your workout session that lasts a few hours, but you’re worn and want to quickly hurry home and catch some sleep.",
+        "choices": [
+            {
+                "id": "sleep",
+                "text": "Go To Sleep",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a"
             }
         ]
     },
@@ -616,16 +684,264 @@
         ]
     },
     "day3-morning-a": {
-        "description": "",
+        "description": "You wake up and it’s another sunny day, the party still has you feeling highly energized and you decide to walk to school. When you get to school you meet up with your group and chat about the party last night. Everyone seems to have really enjoyed it and agrees they would love to go to another party later on. You guys get to class and everything goes smoothly. When lunch comes around you all decide to head to the mall to grab some food.",
         "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-food_court-a"
+            }
+        ]
+    },
+    "day3-food_court-a": {
+        "description": "You get to the food court and realize you don’t have money but thankfully you're a McBillionaire on the McDonald’s app and get yourself a hot n spicy for free 99. After an hour at the food court talking with Michael, Rachel, and Josh mostly about classes and plans for the future. After lunch it’s time for your intro to computer science. You walk in with everyone and your professor lets everyone know there will be a simple 10 question quiz. This quiz is mainly for assessing where everyone is starting from and will not impact your grade, he says. You get going and the quiz is super easy but one question really stumps you. \"What is an algorithm?\"",
+        "choices": [
+            {
+                "id": "incorrect-1",
+                "text": "A computer program written in a specific language.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a-incorrect"
+            },
+            {
+                "id": "incorrect-2",
+                "text": "A type of programming language.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a-incorrect"
+            },
+                        {
+                "id": "correct",
+                "text": "A step-by-step procedure for solving a problem.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a-correct"
+            }
+        ]
+    },
+    "day3-morning-a-incorrect": {
+        "description": "You are the last to finish the test and look at your screen with 6/10 looking at you. You're a bit bummed but that’s whatever because now you know what you have to learn. After class if over you decide to head home and do a bit of studying before getting to sleep.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-a"
+            }
+        ]
+    },
+    "day3-morning-a-correct": {
+        "description": "You have a huge sense of relief as you were sure you got at least one wrong, but that 100% on the screen definitely feels good. Well you ask your friend how they did and it seems like only josh got 100% to no one's surprise, Rachel got 9/10 and Michael got 6/10 and they are pretty bummed they didn’t get 100% as well. After that the class continues as expected and you eventually head home to get some sleep.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-a"
+            }
         ]
     },
     "day3-morning-b": {
+        "description": "You wake up and it’s another sunny day, the party still has you feeling highly energized and you decide to walk to school with Jerome. When you get to school you meet up with Sarah and chat about the party last night. Everyone seems to have really enjoyed it and agrees they would love to go to another party later on. You guys get to class and everything goes smoothly. When lunch comes around you all decide to head to the mall to grab some food. You are unsure what to eat.",
+        "choices": [
+            {
+                "id": "mcdonalds",
+                "text": "You decide to go for the cheap option and head to McDonalds.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-food-b"
+            },
+            {
+                "id": "subway",
+                "text": "You decide to go with a favorite and grab some subway.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-food-b"
+            },
+            {
+                "id": "cheescake-factory",
+                "text": "You feel like something fancy I stop at cheesecake factory.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-food-b"
+            }
+        ]
+    },
+    "day3-after-food-b": {
+        "description": "You get into line and wait for the food, thankfully there isn’t much of a line yet so the food is pretty quick. You grab your food and head to Chick-fil-A to meet up with Jerome and Sarah. You guys head back to the school to finish your lunch. You guys sit in the corner by the pool table and eat your food while watching the other students play pool. When you finish up you guys look around for something to do.",
+        "choices": [
+            {
+                "id": "pool",
+                "text": "You say that you guys should join in the games of pool.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-food-b-response1"
+            },
+            {
+                "id": "ping-pong",
+                "text": "You say that you want to play ping pong.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-food-b-response2"
+            },
+            {
+                "id": "homework",
+                "text": "You mention that you should probably work the project for OOP.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-food-b-response3"
+            }
+        ]
+    },
+    "day3-after-food-b-response1": {
+        "description": "You guys walk up and place your names on the que. You’ve never played before so you have a pretty rough start. After a few games you start to get the rhythm a bit but you're still no pro.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-b"
+            }
+        ]
+    },
+    "day3-after-food-b-response2": {
+        "description": "You walk up to the ping pong table which is empty. You ask Sarah and Jerome who want to go first. Unknown to you Sarah is stupid;y good at ping pong. She volunteers and absolutely smokes you. You all end up playing for a bit, mostly rallies after Sarah's show.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-b"
+            }
+        ]
+    },
+    "day3-after-food-b-response3": {
+        "description": "You all take out your laptops and get started on your project. You guys are working in Java which you’ve never used before, luckily both Sarah and Jerome have some experience with it and help you get started. You guys make pretty substantial progress in the few hours you have available.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-b"
+            }
+        ]
+    },
+    "day3-after-lunch-b": {
+        "description": "By now lunch is wrapping up and you all head to your last class of the day, your intro to computer science class. You walk in and your professor lets everyone know there will be a simple 10 question quiz. This quiz is mainly for assessing where everyone is starting from and will not impact your grade, he says. You get going and the quiz is super easy but one question really stumps you. \"What is 2AF in decimal?\"",
+        "choices": [
+            {
+                "id": "incorrect-1",
+                "text": "1000",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-b-incorrect"
+            },
+            {
+                "id": "incorrect-2",
+                "text": "680",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-b-incorrect"
+            },
+            {
+                "id": "correct",
+                "text": "687",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-b-correct"
+            }
+        ]
+    },
+    "day3-after-lunch-b-incorrect": {
+        "description": "You finish the quiz and see a 9/10, while not a bad score you feel bummed out. Once everyone wraps up the professor goes over the quiz and shows the analytics of which questions were missed most, it seems like there were only a few, but thankfully for you the one you missed was a common one. The rest of class is pretty easy with most of it being spent covering the topics missed in the quiz. After class you head home to catch some sleep as after today you feel beat.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-b"
+            }
+        ]
+    },
+    "day3-after-lunch-b-correct": {
+        "description": "You finish the test and are glad to see that you got a 10/10. The professor goes over the quiz and shows the analytics of which questions were missed most, it seems like there were only a few. The rest of class is pretty easy with most of it being spent covering the topics missed in the quiz. After class you head home to catch some sleep as after today you feel beat.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-b"
+            }
+        ]
+    },
+    "day3-morning-c": {
+        "description": "You wake up with the sun shining brightly in your eyes through the curtain. You hear your roommate on the phone talking about the party last night, you imagine the noise and crowds you likely avoided and while a bit bummed feel like you made the right choice. You grab a quick breakfast alone and head to school. Classes go smoothly. You focus on the lectures, making detailed notes. When lunch comes around you head to a study room seeking a quiet place to focus on your project. You find one and take a seat and open up your laptop.",
+        "choices": [
+            {
+                "id": "research",
+                "text": "You start researching advanced concepts to introduce in the project",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-c"
+            },
+            {
+                "id": "coding",
+                "text": "You begin coding the skeleton for the project.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-c"
+            },
+            {
+                "id": "gaming",
+                "text": "You see a discord message from your high school buddies back home and hop on a game with them.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-c"
+            }
+        ]
+    },
+    "day3-after-lunch-c": {
+        "description": "After a productive lunch, it’s time for your next class, intro to computer science. Your professor announces a simple 10-question quiz, \"mainly for assessing where everyone is starting from and will not impact your grade.\" You get going, and the quiz is straightforward, but one question in particular gives you a small bit of trouble. \"What is 2AF in decimal?\"",
+        "choices": [
+            {
+                "id": "incorrect-1",
+                "text": "1000",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-c-incorrect"
+            },
+            {
+                "id": "incorrect-2",
+                "text": "680",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-c-incorrect"
+            },
+            {
+                "id": "correct",
+                "text": "687",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-after-lunch-c-correct"
+            }
+        ]
+    },
+    "day3-after-lunch-c-incorrect": {
+        "description": "You finish the quiz and see a 9/10 while not a bad score, you feel bummed out. Once everyone wraps up the professor goes over the quiz and shows the analytics of which questions were missed most. It seems like there were only a few, but thankfully for you the one you missed was a common one. The rest of class is pretty easy with most of it being spent covering the topics missed in the quiz. After class, you head home to catch some sleep as after today you feel beat.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-c"
+            }
+        ]
+    },
+    "day3-after-lunch-c-correct": {
+        "description": "You finish the test and are glad to see that you got a 10/10. The professor goes over the quiz and shows the analytics of which questions were missed most; it seems like there were only a few. The rest of class is pretty easy with most of it being spent covering the topics missed in the quiz. After class, you head home to catch some sleep as after today you feel beat.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-c"
+            }
+        ]
+    },
+    "day4-morning-a": {
         "description": "",
         "choices": [
         ]
     },
-    "day3-morning-c": {
+    "day4-morning-b": {
+        "description": "",
+        "choices": [
+        ]
+    },
+    "day4-morning-c": {
         "description": "",
         "choices": [
         ]
