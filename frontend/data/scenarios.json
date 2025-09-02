@@ -528,7 +528,18 @@
                 "id": "work",
                 "text": "Continue Working On Personal Project",
                 "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
-                "next": ""
+                "next": "day2-no-party-a-work-continue"
+            }
+        ]
+    },
+    "day2-no-party-a-work-continue": {
+        "description": "You continue working on your personal project, but as the night wears on, you start to feel the effects of fatigue setting in. Your focus wanes, and you find yourself making more mistakes than usual. You realize that pushing yourself too hard is counterproductive, and that getting a good night's sleep is essential for maintaining your mental clarity and overall well-being. Eventually, you decide to call it a night and head to bed, hoping to get a good night's sleep to recharge for the next day.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a"
             }
         ]
     },
@@ -545,7 +556,18 @@
                 "id": "game",
                 "text": "Continue Gaming",
                 "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
-                "next": ""
+                "next": "day2-no-party-a-game-continue"
+            }
+        ]
+    },
+    "day2-no-party-a-game-continue": {
+        "description": "You continue playing video games, but after a few more rounds, you start to feel the effects of fatigue setting in. Your reactions slow down, and your performance starts to dip. You realize that staying up late playing games is taking a toll on your mental clarity and overall well-being. Eventually, you decide to call it a night and head to bed, hoping to get a good night's sleep to recharge for the next day.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day3-morning-a"
             }
         ]
     },
@@ -932,17 +954,830 @@
         ]
     },
     "day4-morning-a": {
-        "description": "",
+        "description": "Like every other day today starts with you waking up brushing your teeth and getting into your outfit and heading to school but when you get outside you realize it’s raining so you head to the bus stop. While waiting for the bus Jerome walks up and waits there with you, when the bus arrives you both get on and head to school. Once you get to the school your clothes are all wet and you just feel gross. You see Rachel and Michael sitting the common completely dry, you recall they did tell you they live in the tower and honestly feel a bit envious. You walk up to them and start talking with them. You guys have about 20 minutes before class and decide to play some ping pong. The 20 minutes go pretty quick but you kinda wanted to play some more.",
         "choices": [
+            {
+                "id": "ping-pong",
+                "text": "You decide to play some more ping pong even if it results in you missing some class lecture",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-a-decision1"
+            },
+            {
+                "id": "class",
+                "text": "You put the equipment away and head to class.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-a-decision2"
+            }
+        ]
+    },
+     "day4-morning-a-decision1": {
+        "description": "You end up rallying for another 15 minutes and head to class in a rush you walk in and realize there was a pop quiz that you just missed. You feel a bit dumb for missing it but oh well what can you do.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-a"
+            }
+        ]
+    },
+    "day4-morning-a-decision2": {
+        "description": "You get to class your professor lets you all know there will be a pop quiz, although it will be graded it should be very easy. You finish the quiz in about 7 minutes and feel glad the quiz really was super easy.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-a"
+            }
+        ]
+    },
+    "day4-lunch-a": {
+        "description": "The rest of class goes by smoothly as you start to dive deeper into the importance of OOP. It all seems pretty simple and you start to feel better as you are basically dry now. After class you have lunch again but this time you have some food from home so you sit in the commons while Rachel Micheal and Josh go and grab some food. You take out your laptop to kill the time as you wait. You start looking for things to do.",
+        "choices": [
+            {
+                "id": "study",
+                "text": "You watch some videos on OOP to try and get ahead.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-commons-a"
+            },
+            {
+                "id": "work",
+                "text": "You work on the project due Friday.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-commons-a"
+            },
+            {
+                "id": "game",
+                "text": "You play some video games.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-commons-a"
+            }
+        ]
+    },
+    "day4-commons-a": {
+        "description": "While doing so you get very into it and don’t even notice your friends came back until Rachel taps your shoulder asking if you wanted her fries which you accept. You guys finish eating and decide to work on the homework from yesterday together. Josh being the genuine he is already finished them all but offers to help if anyone has questions. You guys finish up the homework for yesterday and today in a short hour thanks to everyone's help and have enough time to mess around with the activities in the commons.",
+        "choices": [
+            {
+                "id": "pool",
+                "text": "You go play pool with Rachel.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-after-commons-a"
+            },
+            {
+                "id": "ping-pong",
+                "text": "You go play ping pong with Josh.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-after-commons-a"
+            },
+            {
+                "id": "foosball",
+                "text": "You go play Foosball with Michael.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-after-commons-a"
+            }
+        ]
+    },
+    "day4-after-commons-a": {
+        "description": "After some pretty intense games time for class rolls around and you guys pack up and head out. The rest of the day goes by quickly and you guys decide to go out and eat once all the classes are done. You guys decided on going to The Cheesecake Factory because Josh has never been and the rest of you were adamant that he had to try it. After your 10/10 dinner you head home to get some sleep excited for Friday to start so you can get on with your weekend.",
+        "choices": [
+            {
+                "id": "sleep",
+                "text": "Go to bed right away",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-a"
+            },
+            {
+                "id": "sleep-late",
+                "text": "Go to bed Late",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-start"
+            }
         ]
     },
     "day4-morning-b": {
-        "description": "",
+        "description": "Like every other day today starts with you waking up brushing your teeth and getting into your outfit and heading to school but when you get outside you realize it’s raining so you head to the bus stop. While waiting for the bus Jerome walks up and waits there with you while you both chat away, when the bus arrives you both get on and head to school. Once you get to the school your clothes are all wet and you just feel gross. You both see Sarha sitting the common completely dry, you recall they did tell you they live in the tower and honestly feel a bit envious. You walk up to her and start talking with her. You guys have about 20 minutes before class and decide to play some ping pong. The 20 minutes go pretty quick but you kinda wanted to play some more.",
         "choices": [
+            {
+                "id": "ping-pong",
+                "text": "You decide to play some more ping pong even if it results in you missing some class lecture",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-b-decision1"
+            },
+            {
+                "id": "class",
+                "text": "You put the equipment away and head to class.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-b-decision2"
+            }
+        ]
+    },
+    "day4-morning-b-decision1": {
+        "description": "You end up rallying for another 15 minutes and head to class in a rush you walk in and realize there was a pop quiz that you just missed. You feel a bit dumb for missing it but oh well what can you do.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-b"
+            }
+        ]
+    },
+    "day4-morning-b-decision2": {
+        "description": "You get to class your professor lets you all know there will be a pop quiz, although it will be graded it should be very easy. You finish the quiz in about 7 minutes and feel glad the quiz really was super easy.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-b"
+            }
+        ]
+    },
+    "day4-lunch-b": {
+        "description": "The rest of class goes by smoothly as you start to dive deeper into the importance of OOP. It all seems pretty simple and you start to feel better as you are basically dry now. After class you have lunch again but this time you have some food from home so you sit in the commons while Rachel Micheal and Josh go and grab some food. You take out your laptop to kill the time as you wait. You start looking for things to do.",
+        "choices": [
+            {
+                "id": "study",
+                "text": "You watch some videos on OOP to try and get ahead.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-commons-b"
+            },
+            {
+                "id": "work",
+                "text": "You work on the project due Friday.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-commons-b"
+            },
+            {
+                "id": "game",
+                "text": "You play some video games.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-commons-b"
+            }
+        ]
+    },
+    "day4-commons-b": {
+        "description": "You get really into it and don’t realize Sarah and Jerome are back until Jerome taps you on the shoulder. You guys eat your food and decide to work on the project now that you are all there. You guys spend the rest of the day doing so which is definitely needed as none of you are experts in the subject. After a few hours of this you are all exhausted and head home to catch some much needed sleep.",
+        "choices": [
+            {
+                "id": "sleep",
+                "text": "Go to bed right away",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-b"
+            },
+            {
+                "id": "sleep-late",
+                "text": "Go to bed Late",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-start"
+            }
         ]
     },
     "day4-morning-c": {
-        "description": "",
+        "description": "Like every other day you start off by waking up and going to brush your teeth, then you get dressed and head out to school. When you get outside you realize that it’s raining so you head to the bus stop. When you get there you see Jerome is already there waiting for the bus. You stand a far bit away and silently wait for the bus. You finally get to school and you are soaked. You head to class although a bit early and take a seat by the window so you can watch the rain. You have about 20 minutes to kill before class starts.",
+        "choices": [
+             {
+                "id": "study",
+                "text": "You decide to go over some of your notes so that you are well prepared for class here in a bit.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-c-decision1"
+            },
+            {
+                "id": "work",
+                "text": "You decide to do some more work on your project.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-c-decision2"
+            },
+            {
+                "id": "music",
+                "text": "You decide to listen to some music and relax in your spare time.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-morning-c-decision3"
+            }
+        ]
+    },
+    "day4-morning-c-decision1": {
+        "description": "You immerse yourself in your notes gearing up for the lecture. The time flies by, and you feel well-prepared when class begins. Your professor lets you all know there will be a pop quiz; although it will be graded, it should be very easy. You finish the quiz in about 7 minutes and feel glad the quiz really was super easy.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-c"
+            }
+        ]
+    },
+    "day4-morning-c-decision2": {
+        "description": "You find your project and make sure your tabs are all prepped for work. While your clothes are still damp, your focus is on your project. You make significant progress in a short time. The Professor arrives at class and announces a pop quiz. You manage to finish it, but some questions feel rushed.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-c"
+            }
+        ]
+    },
+    "day4-morning-c-decision3": {
+        "description": "You put in your headphones and listen to some music. You get the sudden urge to walk around so you get up and take a stroll through the halls making sure to avoid any unnecessary interaction with the people around. You end up getting to class late and you missed a pop quiz the professor gave at the start of class. You feel a bit dumb for missing it, but oh well what can you do.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-lunch-c"
+            }
+        ]
+    },
+    "day4-lunch-c": {
+        "description": "The rest of class goes by smoothly as you start to dive deeper into the importance of OOP. It all seems pretty simple, and you start to feel better as you are basically dry now. After class, you have lunch again, but this time you have some food from home, so you find a quiet table in the Commons. You pull out your laptop, ignoring the general public.",
+        "choices": [
+            {
+                "id": "study",
+                "text": "You watch some videos on advanced OOP concepts to get ahead.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-end-of-day-c"
+            },
+            {
+                "id": "work",
+                "text": "You work on your solo project due Friday, making significant progress.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-end-of-day-c"
+            },
+            {
+                "id": "game",
+                "text": "You play some intricate single-player video games on your laptop.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day4-end-of-day-c"
+            }
+        ]
+    },
+    "day4-end-of-day-c": {
+        "description": "You get really into it, barely noticing the Commons filling and emptying. You finish eating and decide to do some more work on your project independently. You spend the rest of the day focused in your work, fueled by a sense of personal accomplishment. After a few hours of intense concentration, you are exhausted and head home to catch some much-needed sleep.",
+        "choices": [
+            {
+                "id": "sleep",
+                "text": "Go to bed right away",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-c"
+            },
+            {
+                "id": "sleep-late",
+                "text": "Go to bed Late",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-start"
+            }
+        ]
+    },
+    "day5-morning-a": {
+        "description": "It’s Friday morning, and you wake up feeling refreshed and ready for the day. You’re excited that it's the end of the first week of college, and you have plans for the weekend. After you get ready, you have a choice. What will you do?",
+        "choices": [
+            {
+                "id": "meet-up",
+                "text": "Text Michael and Rachel to meet up and walk to class together.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-a-decision1"
+            },
+            {
+                "id": "walk-alone",
+                "text": "Walk to class alone, listening to music or a podcast.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-a-decision2"
+            },
+            {
+                "id": "commons",
+                "text": "Go to the Commons to grab breakfast before class.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-a-decision3"
+            }
+        ]
+    },
+    "day5-morning-a-decision1": {
+        "description": "You meet up with Michael and Rachel, and the three of you walk to class together. You talk about your plans for the weekend and how you feel about the first week. You feel closer as friends, and you feel ready to take on the day.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-a"
+            }
+        ]
+    },
+    "day5-morning-a-decision2": {
+        "description": "You walk to class alone listening to music. You feel calm and collected and you are ready to take on the day. You see a few people you know, but you just wave and keep walking. You feel good about your decision.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-a"
+            }
+        ]
+    },
+    "day5-morning-a-decision3": {
+        "description": "You head to the Commons to grab breakfast before class. You see a few people you know, but you just grab your food and find a quiet table to eat. You feel a bit lonely and wrap up your meal and head to class.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-a"
+            }
+        ]
+    },
+    "day5-class-a": {
+        "description": "You walk into your Intro to CS class, and remember it's time for the Freshman Project Showcase. This is a chance for groups (or individuals) to briefly present a simple program they developed or a concept they mastered. Your group is up next, and the air is buzzing with nervous energy and excitement. Your group is about to present. How will you approach this final display of your first week's efforts?",
+        "choices": [
+            {
+                "id": "volunteer",
+                "text": "Volunteer to present the technical details.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-a-decision1"
+            },
+            {
+                "id": "rachel-present",
+                "text": "Suggest Rachel presents the user experience (UX) and overall vision.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-a-decision2"
+            },
+            {
+                "id": "josh-present",
+                "text": "Propose Josh handles the main presentation.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-a-decision3"
+            }
+        ]
+    },
+    "day5-class-a-decision1": {
+        "description": "You step forward as your group's designated presenter for the technical aspects. You explain the code clearly, but a few technical questions from the professor leave you slightly stumped, causing you to hesitate. You manage to answer, but it's not a flawless performance. You get a decent score, but it’s clear you have more to learn.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-a"
+            }
+        ]
+    },
+    "day5-class-a-decision2": {
+        "description": "Rachel steps up to present the user experience and the project's overall vision, while you and the others stand ready to support.  Rachel begins with enthusiasm, but under the professor's direct questions, she gets a bit flustered, occasionally glancing at you or Michael for help. The presentation is adequate, but it struggles to fully convey the project's potential.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-a"
+            }
+        ]
+    },
+    "day5-class-a-decision3": {
+        "description": "Josh, with his usual quiet confidence, takes the lead on the presentation. Josh delivers a concise, brilliant presentation that thoroughly impresses the professor and classmates. His articulate explanations and deep understanding make your group's project shine, demonstrating your smart decision to delegate to the team's strongest asset. Your group receives high grades.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-a"
+            }
+        ]
+    },
+    "day5-celebrate-a": {
+        "description": "The project showcase is over. Your group is proud of what you've accomplished. You feel a sense of relief and accomplishment. You have a free afternoon, and your friends are asking what you want to do. With the stress of the showcase behind you, your group is ready to celebrate. What will you do?",
+        "choices": [
+            {
+                "id": "commons",
+                "text": "Head to the Commons for some games and to hang out.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-a-decision1"
+            },
+            {
+                "id": "food-court",
+                "text": "Go out for a celebratory lunch at the mall food court.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-a-decision2"
+            },
+            {
+                "id": "dorm",
+                "text": "Go back to your dorm to just relax. ",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-a-decision3"
+            }
+        ]
+    },
+    "day5-celebrate-a-decision1": {
+        "description": "You all head to the Commons for some games and to hang out. You all play a few games of ping-pong and pool. You all feel closer as friends, and you now have a solid support group on campus.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-a"
+            }
+        ]
+    },
+    "day5-celebrate-a-decision2": {
+        "description": "You all head to the campus food court for a celebratory lunch. You all talk about the project, the classes, and the memories you've made. You all feel closer as friends, and you now have a solid support group on campus.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-a"
+            }
+        ]
+    },
+    "day5-celebrate-a-decision3": {
+        "description": "You all head back to your dorm to just relax. You all talk about the project, the classes, and the memories you've made. You all feel closer as friends, and you now have a solid support group on campus.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-a"
+            }
+        ]
+    },
+    "day5-morning-b": {
+        "description": "It’s Friday morning, and you wake up feeling refreshed and ready for the day. You’re excited that it's the end of the first week of college, and you have plans for the weekend. After you get ready, you have a choice. What will you do?",
+        "choices": [
+            {
+                "id": "meet-up",
+                "text": " Ask Jerome if he’d want to walk to class with you.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-b-decision1"
+            },
+            {
+                "id": "walk-alone",
+                "text": "Walk to class alone, listening to music or a podcast.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-b-decision2"
+            },
+            {
+                "id": "commons",
+                "text": "Go to the Commons to grab breakfast before class.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-b-decision3"
+            }
+        ]
+    },
+    "day5-morning-b-decision1": {
+        "description": "You and Jerome both walk to class together. You talk about your plans for the weekend and how you feel about the first week. You're glad you have a roommate who is chill and that you can see as a friend.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-b"
+            }
+        ]
+    },
+    "day5-morning-b-decision2": {
+        "description": "You walk to class alone listening to music. You feel calm and collected and you are ready to take on the day. You see a few people you know, but you just wave and keep walking. You feel good about your decision.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-b"
+            }
+        ]
+    },
+    "day5-morning-b-decision3": {
+        "description": "You head to the Commons to grab breakfast before class. You see a few people you know, but you just grab your food and find a quiet table to eat. You feel a bit lonely and wrap up your meal and head to class.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-b"
+            }
+        ]
+    },
+     "day5-class-b": {
+        "description": "You walk into your Intro to CS class, and remember it's time for the Freshman Project Showcase. This is a chance for groups (or individuals) to briefly present a simple program they developed or a concept they mastered. Your group is up next, and the air is buzzing with nervous energy and excitement. Your group is about to present. How will you approach this final display of your first week's efforts?",
+        "choices": [
+            {
+                "id": "technical",
+                "text": "You decide you want to focus on the code and technical part of the projects.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-b-decision1"
+            },
+            {
+                "id": "ui",
+                "text": "SYou want to highlight the UI and creative process of the project.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-b-decision2"
+            },
+            {
+                "id": "collaborative",
+                "text": "You want to dive into the collaborative process and how your team worked together.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-b-decision3"
+            }
+        ]
+    },
+    "day5-class-b-decision1": {
+        "description": "You step forward as your group's designated presenter for the technical aspects. You explain the code clearly, but a few technical questions from the professor leave you slightly stumped, causing you to hesitate. You manage to answer, but it's not a flawless performance. You get a decent score, but it’s clear you have more to learn.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-b"
+            }
+        ]
+    },
+    "day5-class-b-decision2": {
+        "description": "Sarah (whose design sense is apparent) takes the initiative to showcase the unique design elements and user interface of your project. Sarah absolutely kills, delivering a captivating presentation of the project's creative vision. Her punk-rock flair adds a unique touch that visibly impresses the professor and classmates. Your group receives an A for its innovative and visually appealing work.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-b"
+            }
+        ]
+    },
+    "day5-class-b-decision3": {
+        "description": "You or Jerome will cover how your small team worked together, outlining your challenges and successes. You and Jerome describe the team's process, but the narrative feels a bit flat failing to fully convey the dynamic interactions and specific challenges overcome. The professor notes the project's completion but doesn't see exceptional teamwork.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-b"
+            }
+        ]
+    },
+    "day5-celebrate-b": {
+        "description": "The project showcase is over. Your group is proud of what you've accomplished. You feel a sense of relief and accomplishment. You have a free afternoon, and your friends are asking what you want to do. With the stress of the showcase behind you, your group is ready to celebrate. What will you do?",
+        "choices": [
+            {
+                "id": "movie",
+                "text": "Suggest a chill movie night at someone's dorm.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-b-decision1"
+            },
+            {
+                "id": "game",
+                "text": "Head to the campus game room for some competitive fun.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-b-decision2"
+            },
+            {
+                "id": "pizza",
+                "text": "Go out for a casual dinner at a nearby pizza place.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-b-decision3"
+            }
+        ]
+    },
+    "day5-celebrate-b-decision1": {
+        "description": "You all head to a dorm for a relaxed movie night. You settle in with snacks, chatting and laughing between scenes. It's a low-key, comfortable way to unwind, solidifying your bonds in a relaxed setting. You feel a sense of contentment, appreciating the calm and genuine connection.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-b"
+            }
+        ]
+    },
+    "day5-celebrate-b-decision2": {
+        "description": "You all head to the campus game room. You spend the afternoon playing arcade games, pool, and challenging each other in various competitive activities. The playful rivalry brings you all closer, celebrating your success with energetic fun. You feel a sense of satisfaction from both the project and the shared good times.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-b"
+            }
+        ]
+    },
+    "day5-celebrate-b-decision3": {
+        "description": "You all go to a nearby pizza place for a casual dinner. Over slices of pizza and soda, you recap the week, sharing funny stories and early college experiences. The simple meal and good company feel like a well-deserved reward, fostering a warm, easygoing friendship. You feel grateful for the new connections and the simple joy of shared moments.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-b"
+            }
+        ]
+    },
+    "day5-morning-c": {
+        "description": "It’s Friday morning, and you wake up feeling the weight of the week, but also a fierce determination. You’re excited that it's the end of the first week of college, and you have plans for the weekend – plans that involve a much-needed mental break. After you get ready, you have a choice. What will you do?",
+        "choices": [
+            {
+                "id": "walk-alone",
+                "text": "Walk to class alone, reviewing your project in your head.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-c-decision1"
+            },
+            {
+                "id": "walk-alone-music",
+                "text": "Walk to class alone, listening to music or a podcast to clear your head.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-c-decision2"
+            },
+            {
+                "id": "commons",
+                "text": "Go to the Commons to grab breakfast before class.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-morning-c-decision3"
+            }
+        ]
+    },
+    "day5-morning-c-decision1": {
+        "description": "You walk to class alone, mentally rehearsing your presentation, going over the code in your head. You feel a deep understanding of your work, a sense of quiet mastery.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-c"
+            }
+        ]
+    },
+    "day5-morning-c-decision2": {
+        "description": "You walk to class alone, letting the music wash over you, a much-needed escape from the week's intensity. You feel calm and collected, ready to face the day on your own terms.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-c"
+            }
+        ]
+    },
+    "day5-morning-c-decision3": {
+        "description": "You head to the Commons to grab breakfast before class, keeping your gaze down, wanting to be unnoticed. You grab your food and find a quiet table to eat, feeling a bit isolated as other students chat around you.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-c"
+            }
+        ]
+    },
+    "day5-class-c": {
+        "description": "You walk into your Intro to CS class, and realize you are the only one doing a solo project. This gets you nervous and thinking if you’ve done enough prep for this.",
+        "choices": [
+            {
+                "id": "technical",
+                "text": "You decide to to focus on the technical parts of the project in hopes to highlight the complex features you included.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-c-decision1"
+            },
+            {
+                "id": "unique",
+                "text": "You decide to present the problem you chose to tackle with the project and the unique way you did so.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-c-decision2"
+            },
+            {
+                "id": "solo-journey",
+                "text": "You decide to present the journey this assignment took you on mainly focusing on the fact that you are a solo group.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-class-c-decision3"
+            }
+        ]
+    },
+    "day5-class-c-decision1": {
+        "description": "You deliver a brilliant, in-depth explanation of your solo project's technical intricacies. You confidently tackle complex questions and impress the professor and your classmates with your deep understanding, securing a great grade.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-c"
+            }
+        ]
+    },
+    "day5-class-c-decision2": {
+        "description": "You present your innovative concept with excitement, but you struggle to articulate some of the more abstract ideas clearly, leading to some confusion. The core idea is good, but the presentation doesn't fully capture its potential.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-c"
+            }
+        ]
+    },
+    "day5-class-c-decision3": {
+        "description": "You speak proudly about your journey, but your voice is soft, and you occasionally lose your train of thought, making it difficult for the class to fully connect with your experience. The professor appreciates the effort but notes a lack of organization.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "day5-celebrate-c"
+            }
+        ]
+    },
+     "day5-celebrate-c": {
+        "description": "The project showcase is over. You've completed your first major solo endeavor. You feel a profound sense of relief and individual accomplishment. You have a free afternoon, a blank slate stretching before you. With the stress of the showcase behind you, you feel ready to celebrate. What will you do?",
+        "choices": [
+            {
+                "id": "study",
+                "text": "You head to a study room to study in silence. ",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-c1"
+            },
+            {
+                "id": "game",
+                "text": "You head to your dorm to play video games and relax.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-c2"
+            },
+            {
+                "id": "explore",
+                "text": "You talk a walk around Neumont and Neumont south to find places you haven’t seen before.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "end-c3"
+            }
+        ]
+    },
+    "end-a": {
+        "description": "You feel like you have found your place and have a great group of friends. You are happy that you decided to go to the gathering in the Commons and meet Michael and Rachel. You are glad that you decided to go to Cody's party and get to know more people. You feel like you have a great group of friends who will always be there for you, and you are excited for what the future holds for you and your positive support group.",
+        "choices": [
+        ]
+    },
+    "end-b": {
+        "description": "You reflect on your first week of college. Choosing to sit on the couches led you to Sarah and Jerome, and together, you navigated the initial challenges of campus life. Your academic progress feels solid, a result of diligent effort, and you've found a small, yet reliable, team for support. While you haven't sought out the spotlight, you've cultivated a sense of quiet competence and formed meaningful connections with those who share your interests. You feel prepared for the challenges ahead, knowing you have a focused path and a small, trusted circle to share it with, ready to tackle future projects with your unique blend of skills.",
+        "choices": [
+        ]
+    },
+    "end-c1": {
+        "description": "You head into the study room and are glad to see it empty. You take out your laptop and find a free online course for inheritance and decide to dive into that, as you recall the professor saying that would be covered later on. You really enjoy the topics covered and see just how powerful OOP can be. Satisfied with your study session you head home to get some sleep and prep for the weekend.",
+        "choices": [
+        ]
+    },
+    "end-c2": {
+        "description": "You get into your room and immediately fire up your favorite game. The hours fly away as you immerse yourself in virtual worlds, a welcome escape from school. The week's challenges were tough, but the feeling of conquering them on your own terms has earned you this moment of pure uninterrupted comfort.",
+        "choices": [
+        ]
+    },
+    "end-c3": {
+        "description": "You embark on a long walk around campus, discovering hidden paths and quiet spots you hadn't noticed before. The fresh air and gentle exercise clear your head, and you enjoy the simple act of independent exploration. You feel a quiet confidence growing, knowing you can find your way, both on campus and in your new life without needing a crowd.",
+        "choices": [
+        ]
+    },
+    "insanity-start": {
+        "description": "You wake up and it’s a bright Friday morning, but you are not having it. You feel exhausted and everything around you is irritating from the sound of the light flickering to the sound of your roommate walking outside. Though your body is aching you get up and get ready for your presentation. You decide to skip breakfast and immediately start walking to school once you get ready. You get to that school and the sound from the commons is overarching. While walking through a student absorbed in their phone bumps into you. The student looks at you in a way that just doesn’t sit right with you. In that spilt moment",
+        "choices": [
+            {
+                "id": "push",
+                "text": "You decide to shove the student back.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-decision1"
+            },
+            {
+                "id": "get-off-phone",
+                "text": "You tell the student to watch out and get off their phone.",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-decision2"
+            }
+        ]
+    },
+    "insanity-decision1": {
+        "description": "The student screams at you asking what's your problem.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-end-part-1"
+            }
+        ]
+    },
+    "insanity-decision2": {
+        "description": "The student tells you that it was an accident and that you better calm down. This throws you over the edge.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-end-part-1"
+            }
+        ]
+    },
+    "insanity-end-part-1": {
+        "description": "At this point your hands are up and you are walking towards the student. What commenced afterwards can only be summarized as a sad excuse of a fight. You take a swig at the student and completely miss, the student then takes you down to the ground and you both roll around for a good minute before the other students walk in and break up the fight. The admins are all around you guys making sure nobody leaves. A few short minutes after a police officer walks in and questions both of you.",
+        "choices": [
+            {
+                "id": "next",
+                "text": "Next",
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "next": "insanity-end-part-2"
+            }
+        ]
+    },
+    "insanity-end-part-2": {
+        "description": "The stress really got you this week and led to you making an irrational decision ultimately leading to a night behind bars and being expelled from the school. You take this as a learning moment and reflect on how you could have avoided this outcome.",
         "choices": [
         ]
     }
