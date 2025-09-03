@@ -17,7 +17,7 @@
             {
                 "id": "sit-outskirts",
                 "text": "Sit on the outskirts where nobody else is sitting",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day1-commons-outskirts-intro"
             }
         ]
@@ -28,7 +28,7 @@
             {
                 "id": "ignore-rachel",
                 "text": "Ignore Rachel and continue talking with Michael",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day1-commons-center-response1"
             },
             {
@@ -101,7 +101,7 @@
             {
                 "id": "back-row",
                 "text": "You decide to take a seat in the empty back row.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day1-commons-couch-response"
             },
             {
@@ -140,7 +140,7 @@
             {
                 "id": "window",
                 "text": "You decide to sit by the window furthest from the professor.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.5, "sanity": 0, "burnout": 0 },
                 "next": "day1-commons-outskirts-response"
             },
             {
@@ -197,7 +197,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": 0, "burnout": 0 },
                 "next": "day2-morning-a"
             }
         ]
@@ -208,7 +208,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 5, "burnout": 0 },
                 "next": "day2-morning-a"
             }
         ]
@@ -219,7 +219,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.2, "sanity": 0, "burnout": 0 },
                 "next": "day2-morning-a"
             }
         ]
@@ -236,13 +236,13 @@
             {
                 "id": "next-time",
                 "text": "You say that you have an assignment to do but next time for sure.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": -2, "burnout": 2 },
                 "next": "day1-lunch-b-response2"
             },
             {
                 "id": "wait-for-me",
                 "text": "You ask them to wait until you complete your assignment real quick first.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": 0, "burnout": 0 },
                 "next": "day1-lunch-b-response3"
             }      
         ]
@@ -286,19 +286,19 @@
             {
                 "id": "do-assignment",
                 "text": "Immediately start looking for students doing the assignment in quiet areas.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 2 },
                 "next": "day1-lunch-c-response1"
             },
             {
                 "id": "study",
                 "text": "Head directly to a study room to research potential answers for the assignment's \"general questions\" to be prepared.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 2 },
                 "next": "day1-lunch-c-response2"
             },
             {
                 "id": "go-home",
                 "text": "Go back to your dorm to grab a snack and mentally prepare for the daunting task of talking to strangers later.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day1-lunch-c-response3"
             }      
         ]
@@ -331,7 +331,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.3, "sanity": 0, "burnout": 0 },
                 "next": "day2-morning-c"
             }
         ]
@@ -342,7 +342,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 3, "burnout": 0 },
                 "next": "day2-class-a"
             }
         ]
@@ -353,7 +353,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 0, "burnout": 2 },
                 "next": "day2-lunch-b"
             }
         ]
@@ -364,7 +364,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -3, "burnout": 0 },
                 "next": "day2-class-c"
             }
         ]
@@ -431,13 +431,13 @@
             {
                 "id": "accept",
                 "text": "Accept the invite",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 3, "burnout": -3 },
                 "next": "day2-party-a"
             },
             {
                 "id": "decline",
                 "text": "Decline the invite",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -3, "burnout": 0 },
                 "next": "day2-no-party-a"
             }
         ]
@@ -448,13 +448,13 @@
             {
                 "id": "card-games",
                 "text": "You say that some card games would be fun to pass the time.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 0, "burnout": -2 },
                 "next": "day2-party-a-card-games"
             },
             {
                 "id": "art",
                 "text": "You say that the arts area looks interesting and head over there.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 0, "burnout": -2 },
                 "next": "day2-party-a-art"
             }
         ]
@@ -498,19 +498,19 @@
             {
                 "id": "work",
                 "text": "Work On Your Personal Project",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.1, "sanity": -2, "burnout": 4 },
                 "next": "day2-no-party-a-work"
             },
             {
                 "id": "games",
                 "text": "Play Video Games",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.2, "sanity": 2, "burnout": -3 },
                 "next": "day2-no-party-a-game"
             },
             {
                 "id": "gym",
                 "text": "Go To The Gym",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": -2 },
                 "next": "day2-no-party-a-gym"
             }
         ]
@@ -527,7 +527,7 @@
             {
                 "id": "work",
                 "text": "Continue Working On Personal Project",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.1, "sanity": -3, "burnout": 3 },
                 "next": "day2-no-party-a-work-continue"
             }
         ]
@@ -555,7 +555,7 @@
             {
                 "id": "game",
                 "text": "Continue Gaming",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": 2, "burnout": 0 },
                 "next": "day2-no-party-a-game-continue"
             }
         ]
@@ -588,13 +588,13 @@
             {
                 "id": "video-games",
                 "text": "You go and play some video games",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day2-lunch-b-response1"
             },
             {
                 "id": "card-games",
                 "text": "You go and play some card games.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day2-lunch-b-response2"
             },
             {
@@ -644,19 +644,19 @@
             {
                 "id": "ask-professor",
                 "text": " Approach the professor to inquire about working solo or if he knows of any other stragglers.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": 0, "burnout": 0 },
                 "next": "day2-class-c-response1"
             },
             {
                 "id": "procrastinate",
                 "text": "Try and find a group last minute from the people still lingering.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.5, "sanity": 0, "burnout": 0 },
                 "next": "day2-class-c-response2"
             },
             {
                 "id": "solo",
                 "text": "You decide to take this project on your own.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -4, "burnout": 4 },
                 "next": "day2-class-c-response3"
             }      
         ]
@@ -689,7 +689,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -2, "burnout": 3 },
                 "next": "day2-lunch-c"
             }
         ]
@@ -700,7 +700,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": -3, "burnout": 0 },
                 "next": "day3-morning-c"
             }
         ]
@@ -722,19 +722,19 @@
             {
                 "id": "incorrect-1",
                 "text": "A computer program written in a specific language.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": -2, "burnout": 0 },
                 "next": "day3-morning-a-incorrect"
             },
             {
                 "id": "incorrect-2",
                 "text": "A type of programming language.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": -2, "burnout": 0 },
                 "next": "day3-morning-a-incorrect"
             },
                         {
                 "id": "correct",
                 "text": "A step-by-step procedure for solving a problem.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.1, "sanity": 0, "burnout": 0 },
                 "next": "day3-morning-a-correct"
             }
         ]
@@ -745,7 +745,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.1, "sanity": 0, "burnout": 0 },
                 "next": "day4-morning-a"
             }
         ]
@@ -756,7 +756,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day4-morning-a"
             }
         ]
@@ -790,19 +790,19 @@
             {
                 "id": "pool",
                 "text": "You say that you guys should join in the games of pool.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": 0, "burnout": -3 },
                 "next": "day3-after-food-b-response1"
             },
             {
                 "id": "ping-pong",
                 "text": "You say that you want to play ping pong.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": 0, "burnout": -3 },
                 "next": "day3-after-food-b-response2"
             },
             {
                 "id": "homework",
                 "text": "You mention that you should probably work the project for OOP.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": -7, "burnout": 4 },
                 "next": "day3-after-food-b-response3"
             }
         ]
@@ -819,12 +819,12 @@
         ]
     },
     "day3-after-food-b-response2": {
-        "description": "You walk up to the ping pong table which is empty. You ask Sarah and Jerome who want to go first. Unknown to you Sarah is stupid;y good at ping pong. She volunteers and absolutely smokes you. You all end up playing for a bit, mostly rallies after Sarah's show.",
+        "description": "You walk up to the ping pong table which is empty. You ask Sarah and Jerome who want to go first. Unknown to you Sarah is stupidly good at ping pong. She volunteers and absolutely smokes you. You all end up playing for a bit, mostly rallies after Sarah's show.",
         "choices": [
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day3-after-lunch-b"
             }
         ]
@@ -835,7 +835,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -7, "burnout": 2 },
                 "next": "day3-after-lunch-b"
             }
         ]
@@ -846,19 +846,19 @@
             {
                 "id": "incorrect-1",
                 "text": "1000",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": -3, "burnout": 0 },
                 "next": "day3-after-lunch-b-incorrect"
             },
             {
                 "id": "incorrect-2",
                 "text": "680",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": -3, "burnout": 0 },
                 "next": "day3-after-lunch-b-incorrect"
             },
             {
                 "id": "correct",
                 "text": "687",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.1, "sanity": 0, "burnout": 0 },
                 "next": "day3-after-lunch-b-correct"
             }
         ]
@@ -869,7 +869,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -3, "burnout": 0 },
                 "next": "day4-morning-b"
             }
         ]
@@ -891,19 +891,19 @@
             {
                 "id": "research",
                 "text": "You start researching advanced concepts to introduce in the project",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -10, "burnout": 5 },
                 "next": "day3-after-lunch-c"
             },
             {
                 "id": "coding",
                 "text": "You begin coding the skeleton for the project.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -10, "burnout": 5 },
                 "next": "day3-after-lunch-c"
             },
             {
                 "id": "gaming",
                 "text": "You see a discord message from your high school buddies back home and hop on a game with them.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.3, "sanity": 3, "burnout": 0 },
                 "next": "day3-after-lunch-c"
             }
         ]
@@ -914,19 +914,19 @@
             {
                 "id": "incorrect-1",
                 "text": "1000",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": -5, "burnout": 0 },
                 "next": "day3-after-lunch-c-incorrect"
             },
             {
                 "id": "incorrect-2",
                 "text": "680",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.1, "sanity": -5, "burnout": 0 },
                 "next": "day3-after-lunch-c-incorrect"
             },
             {
                 "id": "correct",
                 "text": "687",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.1, "sanity": 0, "burnout": 0 },
                 "next": "day3-after-lunch-c-correct"
             }
         ]
@@ -937,7 +937,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -2, "burnout": 0 },
                 "next": "day4-morning-c"
             }
         ]
@@ -948,7 +948,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day4-morning-c"
             }
         ]
@@ -970,13 +970,13 @@
             }
         ]
     },
-     "day4-morning-a-decision1": {
+    "day4-morning-a-decision1": {
         "description": "You end up rallying for another 15 minutes and head to class in a rush you walk in and realize there was a pop quiz that you just missed. You feel a bit dumb for missing it but oh well what can you do.",
         "choices": [
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.7, "sanity": -10, "burnout": 0 },
                 "next": "day4-lunch-a"
             }
         ]
@@ -987,7 +987,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 3, "burnout": 0 },
                 "next": "day4-lunch-a"
             }
         ]
@@ -998,19 +998,19 @@
             {
                 "id": "study",
                 "text": "You watch some videos on OOP to try and get ahead.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -10, "burnout": 5 },
                 "next": "day4-commons-a"
             },
             {
                 "id": "work",
                 "text": "You work on the project due Friday.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -10, "burnout": 5 },
                 "next": "day4-commons-a"
             },
             {
                 "id": "game",
                 "text": "You play some video games.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.3, "sanity": 3, "burnout": 0 },
                 "next": "day4-commons-a"
             }
         ]
@@ -1021,19 +1021,19 @@
             {
                 "id": "pool",
                 "text": "You go play pool with Rachel.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day4-after-commons-a"
             },
             {
                 "id": "ping-pong",
                 "text": "You go play ping pong with Josh.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day4-after-commons-a"
             },
             {
                 "id": "foosball",
                 "text": "You go play Foosball with Michael.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day4-after-commons-a"
             }
         ]
@@ -1044,13 +1044,13 @@
             {
                 "id": "sleep",
                 "text": "Go to bed right away",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": -2 },
                 "next": "day5-morning-a"
             },
             {
                 "id": "sleep-late",
                 "text": "Go to bed Late",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "insanity-start"
             }
         ]
@@ -1061,13 +1061,13 @@
             {
                 "id": "ping-pong",
                 "text": "You decide to play some more ping pong even if it results in you missing some class lecture",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.2, "sanity": 2, "burnout": 0 },
                 "next": "day4-morning-b-decision1"
             },
             {
                 "id": "class",
                 "text": "You put the equipment away and head to class.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0.2, "sanity": -10, "burnout": 3 },
                 "next": "day4-morning-b-decision2"
             }
         ]
@@ -1100,19 +1100,19 @@
             {
                 "id": "study",
                 "text": "You watch some videos on OOP to try and get ahead.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -10, "burnout": 3 },
                 "next": "day4-commons-b"
             },
             {
                 "id": "work",
                 "text": "You work on the project due Friday.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 3 },
                 "next": "day4-commons-b"
             },
             {
                 "id": "game",
                 "text": "You play some video games.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": -0.2, "sanity": 2, "burnout": -2 },
                 "next": "day4-commons-b"
             }
         ]
@@ -1123,13 +1123,13 @@
             {
                 "id": "sleep",
                 "text": "Go to bed right away",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 2, "burnout": 0 },
                 "next": "day5-morning-b"
             },
             {
                 "id": "sleep-late",
                 "text": "Go to bed Late",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "insanity-start"
             }
         ]
@@ -1137,7 +1137,7 @@
     "day4-morning-c": {
         "description": "Like every other day you start off by waking up and going to brush your teeth, then you get dressed and head out to school. When you get outside you realize that it’s raining so you head to the bus stop. When you get there you see Jerome is already there waiting for the bus. You stand a far bit away and silently wait for the bus. You finally get to school and you are soaked. You head to class although a bit early and take a seat by the window so you can watch the rain. You have about 20 minutes to kill before class starts.",
         "choices": [
-             {
+            {
                 "id": "study",
                 "text": "You decide to go over some of your notes so that you are well prepared for class here in a bit.",
                 "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
@@ -1163,7 +1163,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day4-lunch-c"
             }
         ]
@@ -1174,7 +1174,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day4-lunch-c"
             }
         ]
@@ -1185,7 +1185,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day4-lunch-c"
             }
         ]
@@ -1208,7 +1208,7 @@
             {
                 "id": "game",
                 "text": "You play some intricate single-player video games on your laptop.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "day4-end-of-day-c"
             }
         ]
@@ -1219,13 +1219,13 @@
             {
                 "id": "sleep",
                 "text": "Go to bed right away",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": 5, "burnout": 0 },
                 "next": "day5-morning-c"
             },
             {
                 "id": "sleep-late",
                 "text": "Go to bed Late",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -5, "burnout": 0 },
                 "next": "insanity-start"
             }
         ]
@@ -1678,7 +1678,7 @@
             }
         ]
     },
-     "day5-celebrate-c": {
+    "day5-celebrate-c": {
         "description": "The project showcase is over. You've completed your first major solo endeavor. You feel a profound sense of relief and individual accomplishment. You have a free afternoon, a blank slate stretching before you. With the stress of the showcase behind you, you feel ready to celebrate. What will you do?",
         "choices": [
             {
@@ -1732,13 +1732,13 @@
             {
                 "id": "push",
                 "text": "You decide to shove the student back.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -20, "burnout": 0 },
                 "next": "insanity-decision1"
             },
             {
                 "id": "get-off-phone",
                 "text": "You tell the student to watch out and get off their phone.",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -20, "burnout": 0 },
                 "next": "insanity-decision2"
             }
         ]
@@ -1749,7 +1749,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -20, "burnout": 0 },
                 "next": "insanity-end-part-1"
             }
         ]
@@ -1760,7 +1760,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -15, "burnout": 0 },
                 "next": "insanity-end-part-1"
             }
         ]
@@ -1771,7 +1771,7 @@
             {
                 "id": "next",
                 "text": "Next",
-                "effects": { "gpa": 0, "sanity": 0, "burnout": 0 },
+                "effects": { "gpa": 0, "sanity": -15, "burnout": 0 },
                 "next": "insanity-end-part-2"
             }
         ]
